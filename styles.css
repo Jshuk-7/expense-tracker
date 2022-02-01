@@ -1,0 +1,164 @@
+:root {
+    --box-shawdow: 0px 1px 4px 1px rgba(199,199,199,1);
+    --income: #00FF00;
+    --expense: #FF0000;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F6368;
+    color: white;
+}
+
+.app h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.balance-container #balance {
+    font-size: 1.5em;
+}
+
+.cashflow-container {
+    display: flex;
+    box-shadow: var(--box-shawdow);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.income-container {
+    border-right: 1px solid #CCCCCC;
+    padding-right: 40px;
+}
+
+.expense-container {
+    padding-left: 40px;
+}
+
+#income, #expenses {
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: black;
+    padding: 10px;
+}
+
+#income {
+    color: var(--income);
+    text-align: center;
+}
+
+#expenses {
+    color: var(--expense);
+    text-align: center;
+}
+
+#transaction {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #CCCCCC;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+#transaction .transaction-description {
+    padding-top: 12px;
+}
+
+#transaction li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: var(--box-shawdow);
+}
+
+.transaction-container {
+    margin-top: 40px;
+}
+
+#transaction li span {
+    display: inline-block;
+    color: black;
+    padding: 5px;
+    border-radius: .5rem;
+    margin-right: 5px;
+}
+
+#transaction li .income-amt {
+    background-color: var(--income);
+}
+
+#transaction li .expense-amt {
+    background-color: var(--expense);
+}
+
+#transaction li button {
+    padding: 8px 12px 6px 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 1rem;
+    background: #CCCCCC;
+    color: black;
+}
+
+.form-container {
+    margin-top: 40px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+}
+
+.form-container form label {
+    padding-bottom: 10px;
+}
+
+.form-container form input {
+    background: #535353;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-container form button {
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 1rem;
+}
+
+#incomeBtn {
+    background-color: var(--income);
+}
+
+#expenseBtn {
+    background-color: var(--expense);
+}
